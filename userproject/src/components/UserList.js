@@ -26,7 +26,7 @@ details of all the users
     <ListGroupItem className='col-2'><strong>{user.username}</strong></ListGroupItem>
     <ListGroupItem><strong>{user.email}</strong></ListGroupItem>
     <ListGroupItem> <div className='ml-auto'>
-      <Link className='btn btn-warning m-1' to={`/edituser/${user.id}`}>EDITt</Link>
+      <Link className='btn btn-warning m-1' to={`/edituser/${user.id}`}>EDIT</Link>
       <Button onClick={()=>removeUser(user.id)}>DELETE</Button>
       </div></ListGroupItem>
   </ListGroup>
