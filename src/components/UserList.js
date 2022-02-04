@@ -46,6 +46,9 @@ return(
 
 
 <div className=' text-center m-3'><Link className='btn btn-primary' to='/adduser'>ADD NEW USERS</Link></div>
+<div className=' text-center m-3'><Link className='btn btn-primary' to='/'>LOG OUT</Link></div>
+       
+       
         </ListGroup>
 
 

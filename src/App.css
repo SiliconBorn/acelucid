@@ -13,6 +13,12 @@
   }
 }
 
+
+.errors {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #f00e0e;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,6 +29,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 .App-link {
   color: #61dafb;

@@ -7,6 +7,7 @@ import {  Link,useNavigate} from 'react-router-dom';
 
 
 
+
 export const FormSignup = () => {
   
   const[newUser,setNewUser]= useState({
@@ -76,7 +77,7 @@ export const FormSignup = () => {
            placeholder='Please choose a username'
            type='text'
            />
-           {errors.username &&<p>{errors.username}</p>}
+           {errors.username &&<p className='errors'>{errors.username}</p>}
            </FormGroup>
      <FormGroup>
            
@@ -90,7 +91,7 @@ export const FormSignup = () => {
            placeholder='Enter your email'
            type='email'
          />
-          {errors.email &&<p>{errors.email}</p>}
+          {errors.email &&<p className='errors'>{errors.email}</p>}
        </FormGroup>
        <FormGroup>
          <Label for='newpassword'>
@@ -103,7 +104,7 @@ export const FormSignup = () => {
            placeholder='Please choose a secure password'
            type='password'
          />
-          {errors.password &&<p>{errors.password}</p>}
+          {errors.password &&<p className='errors'>{errors.password}</p>}
      </FormGroup>
      
        <Button  type='submit'className='btn btn-success'>
