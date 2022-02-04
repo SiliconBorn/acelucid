@@ -78,7 +78,7 @@ console.log(selectedUser);
     onChange={onChange}
       name='password'
       placeholder="Choose a password"
-      type='password'
+      type='text'
     />
 </FormGroup>
 <Button type='submit' className='btn btn-success '>
