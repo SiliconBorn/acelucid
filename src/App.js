@@ -15,8 +15,8 @@ function App() {
     <>
 <GlobalProvider>
     <Routes>
-    <Route path='/' element={<FormSignup/>}></Route>
-    <Route path='login' element={<FormLogin/>}></Route>
+    <Route path='/' element={<FormLogin/>}></Route>
+    <Route path='signup' element={<FormSignup/>}></Route>
     <Route path='edituser/:id' element={<EditUser/>}></Route>
     <Route path='userlist' element={<UserList/>}></Route>
     <Route path='adduser' element={<AddUser/>}></Route>

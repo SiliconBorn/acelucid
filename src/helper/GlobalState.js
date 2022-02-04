@@ -9,10 +9,10 @@ import {AppReducer} from './AppReducer';
 //initial state
  const initialState={ 
      users:[
-   {id: 1 , username: 'Biswash', email:'jjosdjkas2@gmail.com', password:'123342jjdsis'},
-   {id: 2 , username: 'Nitin', email:'jjosdjkas2@gmail.com', password:'123342saddsis'},
+   {id: 1 , username: 'Biswash', email:'just11hiro@gmail.com', password:'0123456789'},
+   {id: 2 , username: 'Nitin', email:'nitinforlife2@gmail.com', password:'123342saddsis'},
 
-   {id: 3 , username: 'Mukul', email:'jjosdjkas2@gmail.com', password:'123342adadvssjjdsis'},
+   {id: 3 , username: 'Mukul', email:'mukul2@gmail.com', password:'123342adadvssjjdsis'},
    {id: 4 , username: 'Piyush', email:'jjosdjkas2@gmail.com', password:'123342jjdsis'}
 ]}
 

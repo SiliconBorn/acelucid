@@ -38,9 +38,10 @@ export const FormSignup = () => {
           email:newUser.email,
           password:newUser.password
          }
-         addUser(newSignup);
+        
          console.log(newSignup);
          navigate('/userlist');
+         addUser(newSignup);
   }else{
     
       alert('there is error in filling form details');

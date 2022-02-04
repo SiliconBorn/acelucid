@@ -14,16 +14,30 @@ export const FormLogin = () => {
       const{ users}= useContext(GlobalContext);
       const navigate= useNavigate();
 
-      const [errors, setErrors]=useState({});
+      
       const onSubmit=(e)=>{
         e.preventDefault();
+      
      const login={
          
          email:user.email,
          password:user.password
         }
-        
+
+const auth = users.find((user)=>{
+  if( user.email===login.email && user.password===login.password){
+    return true;
+  }
+  return false;
+  }
+);
+if(auth){
   navigate('/userlist')
+
+}else{
+  alert('Credentials does not exist!!')
+}
+        
   
   }
 
@@ -58,7 +72,7 @@ export const FormLogin = () => {
        placeholder='Enter your email'
        type='email'
      />
-      {errors.email &&<p>{errors.email}</p>}
+      
    </FormGroup>
    <FormGroup>
      <Label for='password'>
@@ -71,13 +85,13 @@ export const FormLogin = () => {
        placeholder='Enter your secure password'
        type='password'
      />
-      {errors.password &&<p>{errors.password}</p>}
+      
  </FormGroup>
  
    <Button  type='submit'className='btn btn-success'>
      LOGIN
    </Button><br/>
-  <span>Don't have an account? <Link to='/'> Signup now!!
+  <span>Don't have an account? <Link to='/signup'> Signup now!!
    
    </Link></span>
  </Form>
